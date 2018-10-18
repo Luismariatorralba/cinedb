@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+<<<<<<< HEAD
 var pelicula = require('../controllers/peliculas.js');
 var Pelicula = require('../models/peliculas.js');
 
@@ -88,3 +89,12 @@ router.delete('/:id',  function(req,res){
 });
 
 module.exports = router;
+=======
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
+
+module.exports = router;
+>>>>>>> 6f8330cbf2a3882a2765aaf2e05621c5bb7ed695
